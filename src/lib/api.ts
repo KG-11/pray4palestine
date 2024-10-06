@@ -20,10 +20,10 @@ export const fetchNamesByTimeSegment = async () => {
     now.getSeconds() * 1000 +
     now.getMilliseconds();
 
-  const pageNumber =
-    Math.floor(millisecondsSinceMidnight / segmentDuration) + 1;
+  let pageNumber = Math.floor(millisecondsSinceMidnight / segmentDuration) + 1;
+  pageNumber = pageNumber > totalPages ? 1 : pageNumber;
 
-  const apiUrl = `https://data.techforpalestine.org/api/v2/killed-in-gaza/page-344.json`;
+  const apiUrl = `https://data.techforpalestine.org/api/v2/killed-in-gaza/page-${pageNumber}.json`;
 
   try {
     const response = await fetch(apiUrl);
@@ -33,7 +33,7 @@ export const fetchNamesByTimeSegment = async () => {
     while (extendedNames.length < 100) extendedNames.push(...data);
     return extendedNames.slice(0, 100) as Names[];
   } catch (error) {
-    console.error("Error fetching data:", error);
+    console.error(`Error fetching data:[${pageNumber}]`, error);
     return [];
   }
 };

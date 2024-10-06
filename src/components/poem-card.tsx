@@ -19,7 +19,6 @@ const lines = [
   `and how vast, how indifferent.`,
   `How powerless I am to protect you from it.`,
   `All I can do is pray.”`,
-  `\n― Khaled Hosseini, Sea Prayer`,
 ];
 
 // const fullLines = `“I said to you,\n"Hold my hand.\nNothing bad will happen."\nThese are only words.\nA father's tricks,\nIt slays your father,\nyour faith in him.\nBecause all I can think tonight is\nhow deep the sea,\nand how vast, how indifferent.\nHow powerless I am to protect you from it.\nAll I can do is pray.”\n\n― Khaled Hosseini, Sea Prayer`;
@@ -40,6 +39,15 @@ const PoemCard = () => {
               <WordFadeIn words={line} delay={0.25} />
             </BlurIn>
           ))}
+          <br />
+          <BlurIn duration={12} className="flex">
+            <WordFadeIn
+              className="font-normal"
+              words={`― Khaled Hosseini, `}
+              delay={0.25}
+            />
+            <WordFadeIn className="italic" words={`Sea Prayer`} delay={0.25} />
+          </BlurIn>
         </div>
         <div className="mt-4 w-full flex gap-1">
           <AudioFile />

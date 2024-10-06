@@ -29,10 +29,7 @@ const Info = () => {
             <p className="font-light mb-4">
               All I Can Do Is Pray is a 5 hour recording of the names of 6747
               Palestinians martyred between 17th October 2023 and 1st November
-              2023 by Israel. As of 24th April 2024, the ongoing genocide has
-              over 34,000 Palestinians killed with the real number including the
-              thousands missing, buried under rubble, estimated to be over
-              42,000, including 15,000+ children and 10,000+ women.
+              2023 by Israel.
             </p>
             <p className="font-light">
               Vocal recitation and recording by:{" "}
@@ -47,6 +44,24 @@ const Info = () => {
             </p>
             <p className="font-light">
               designs by: <b className="font-normal">shylesh</b>
+            </p>
+            <p className="font-light">
+              acknowledgements:{" "}
+              <span>
+                <b className="font-normal">Aabshaar Wakhloo</b>
+                {", "}
+                <b className="font-normal">Anandit Sachdev</b>
+                {", "}
+                <b className="font-normal">Baan G</b>
+                {", "}
+                <b className="font-normal">Ifra Shams Ansari</b>
+                {", "}
+                <b className="font-normal">Sumedha Bhattacharya</b>
+                {", "}
+                <b className="font-normal">Surbhi Mittal</b>
+                {", "}
+                <b className="font-normal">The Solidarity Movement</b>
+              </span>
             </p>
           </div>
           <DrawerFooter className="items-center">
