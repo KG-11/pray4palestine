@@ -28,7 +28,7 @@ const lines = [
 
 const PoemCard = () => {
   return (
-    <div className="size-full grid place-items-center p-4">
+    <div className="size-full grid place-items-center p-4 overflow-auto">
       <div className="relative flex flex-col gap-2 items-start justify-center overflow-hidden rounded-2xl border bg-slate-50 my-auto md:shadow-xl z-30 p-8">
         <p className="text-left text-2xl lg:text-3xl font-semibold leading-1 select-none font-primary">
           All I Can Do Is Pray

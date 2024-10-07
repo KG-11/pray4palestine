@@ -27,9 +27,8 @@ const NameList = () => {
   const calculateFontSize = () => {
     const windowHeight = window.innerHeight;
     const totalRows = 10;
-    const availableHeight = windowHeight * 0.5;
-    const size = availableHeight / totalRows;
-    setFontSize(`${size > 24 ? size : 24}px`);
+    const size = Math.floor((windowHeight - 32) / totalRows);
+    setFontSize(`${size}px`);
   };
 
   const isEvenRow = (rowIndex: number) => rowIndex % 2 === 0;
