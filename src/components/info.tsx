@@ -28,7 +28,7 @@ const Info = () => {
           <div className="p-4 pb-0 max-h-[42rem] overflow-y-auto text-lg font-primary">
             <p className="font-light mb-4">
               All I Can Do Is Pray is a 5 hour recording of the names of 6747
-              Palestinians martyred between 17th October 2023 and 1st November
+              Palestinians martyred between 7th October 2023 and 1st November
               2023 by Israel.
             </p>
             <p className="font-light">
