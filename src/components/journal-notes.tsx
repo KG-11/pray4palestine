@@ -32,7 +32,7 @@ const JournalNotes = () => {
               (The event that pushed me to make All I Can Do Is Pray.)
             </DrawerDescription>
           </DrawerHeader>
-          <div className="p-4 pb-0 max-h-[42rem] overflow-y-auto flex flex-col gap-3 items-start">
+          <div className="p-4 pb-0 max-h-[55vh] overflow-y-auto flex flex-col gap-3 items-start">
             <p className="text-lg font-light">
               The war in Gaza left the land with innocent civilian lives lost.
               Most of which are children.
