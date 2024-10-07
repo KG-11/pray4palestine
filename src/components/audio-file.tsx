@@ -45,6 +45,7 @@ const AudioFile = () => {
         loop
         playing
         controls
+        playsinline
       />
     </>
   );
